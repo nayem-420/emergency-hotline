@@ -8,278 +8,307 @@
     <!-- daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <!-- font awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- tailwind css cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="bg-[#f5fff6] ml-0">
     <!-- navbar section -->
-    <nav class="flex justify-between items-center ml-5 mr-5 mt-3">
+    <nav class="flex flex-col md:flex-row justify-between items-center mx-auto md:mx-10 mt-3">
         <div class="flex justify-center items-center">
             <img src="./assets/logo.png" alt="" class="w-[50px] h-[50px]">
             <h1 class="font-bold text-2xl text-[#006747] ml-2">Emergency <br> Service</h1>
         </div>
-        <div>
+        <div class="flex flex-col md:flex-row gap-3">
             <button class="btn btn-soft rounded-full bg-[#41ff6b1a] font-extrabold text-xl">0 <i
                     class="fa-solid fa-heart text-red-700"></i></button>
             <button class="btn btn-soft rounded-full bg-[#41ff6b1a] font-extrabold text-xl">100 <i
                     class="fa-brands fa-bitcoin"></i></button>
-            <button class="btn btn-success rounded-full font-bold text-xl text-white">0 Copy</button>
+            <button class="btn btn-success rounded-full font-bold text-xl text-white bg-[#00a63e]">0 Copy</button>
         </div>
     </nav>
 
     <!-- banner section -->
     <div
-        class="h-[240px] bg-gradient-to-r from-[#013223] from-10% via-[#006747] via-50% to-[#013223] to-100% text-center py-5 my-6">
-        <img src="./assets/logo-dark.png" class="h-[100px] w-[100px] mx-auto" alt="">
-        <h1 class="text-white font-bold text-4xl">Emergency Service Directory</h1>
-        <p class="text-white font-semibold text-xl mt-5">Government Emergency Services at Your Fingertip – A Project by
+        class="h-[250px] md:h-[240px] bg-gradient-to-r from-[#013223] from-10% via-[#006747] via-50% to-[#013223] to-100% text-center py-5 my-6">
+        <img src="./assets/logo-dark.png" class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] mx-auto" alt="">
+        <h1 class="text-white font-bold text-xl md:text-4xl">Emergency Service Directory</h1>
+        <p class="text-white font-semibold text-sm md:text-xl mt-5">Government Emergency Services at Your Fingertip – A Project by
             Government of the People’s Republic of Bangladesh</p>
     </div>
 
     <!-- cart section -->
-    <div>
+    <div class="mt-11 flex flex-col md:flex-row justify-between mx-10">
         <!-- this is for the 9 cart section -->
-        <div class="grid grid-cols-3">
-            <div class="card bg-base-100 w-96 shadow-sm mb-5">
-                <figure class="flex gap-[200px]">
-                    <img src="./assets/emergency.png" class="w-[60px] h-[60px]" alt="Shoes" />
-                    <button class="btn btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                            stroke="currentColor" class="size-[1.2em]">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
-                    </button>
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title text-2xl">
-                        National Emergency Number
-                    </h2>
-                    <p>National Emergency</p>
-                    <h2 class="card-title font-bold text-3xl">
-                        999
-                    </h2>
-                    <button class="btn btn-soft w-[53px] rounded-2xl">All</button>
-                    <div class="flex gap-2">
-                        <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i class="fa-solid fa-copy"></i>Copy</button>
-                        <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i class="fa-solid fa-phone"></i>Call</button>
+        <div class="w-full">
+            <div class="grid grid-cols-1 md:grid-cols-3">
+                <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
+                    <figure class="flex gap-32 md:gap-[200px]">
+                        <img src="./assets/emergency.png" class="w-[60px] h-[60px]" alt="Shoes" />
+                        <button class="btn btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                stroke="currentColor" class="size-[1.2em]">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
+                        </button>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-2xl">
+                            National Emergency Number
+                        </h2>
+                        <p>National Emergency</p>
+                        <h2 class="card-title font-bold text-3xl">
+                            999
+                        </h2>
+                        <button class="btn btn-soft w-[53px] rounded-2xl">All</button>
+                        <div class="flex gap-2">
+                            <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card bg-base-100 w-96 shadow-sm mb-5">
-                <figure class="flex gap-[200px]">
-                    <img src="./assets/police.png" class="w-[60px] h-[60px]" alt="Shoes" />
-                    <button class="btn btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                            stroke="currentColor" class="size-[1.2em]">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
-                    </button>
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title text-2xl">
-                        Police Helpline Number
-                    </h2>
-                    <p>Police</p>
-                    <h2 class="card-title font-bold text-3xl">
-                        999
-                    </h2>
-                    <button class="btn btn-soft w-[53px] rounded-2xl">Police</button>
-                    <div class="flex gap-2">
-                        <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i class="fa-solid fa-copy"></i>Copy</button>
-                        <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i class="fa-solid fa-phone"></i>Call</button>
+                <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
+                    <figure class="flex gap-28 md:gap-[200px]">
+                        <img src="./assets/police.png" class="w-[60px] h-[60px]" alt="Shoes" />
+                        <button class="btn btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                stroke="currentColor" class="size-[1.2em]">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
+                        </button>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-2xl">
+                            Police Helpline Number
+                        </h2>
+                        <p>Police</p>
+                        <h2 class="card-title font-bold text-3xl">
+                            999
+                        </h2>
+                        <button class="btn btn-soft w-[53px] rounded-2xl">Police</button>
+                        <div class="flex gap-2">
+                            <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card bg-base-100 w-96 shadow-sm mb-5">
-                <figure class="flex gap-[200px]">
-                    <img src="./assets/fire-service.png" class="w-[60px] h-[60px]" alt="Shoes" />
-                    <button class="btn btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                            stroke="currentColor" class="size-[1.2em]">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
-                    </button>
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title text-2xl">
-                        Fire Service Number
-                    </h2>
-                    <p>Fire Service</p>
-                    <h2 class="card-title font-bold text-3xl">
-                        999
-                    </h2>
-                    <button class="btn btn-soft w-[53px] rounded-2xl">Fire</button>
-                    <div class="flex gap-2">
-                        <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i class="fa-solid fa-copy"></i>Copy</button>
-                        <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i class="fa-solid fa-phone"></i>Call</button>
+                <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
+                    <figure class="flex gap-32 md:gap-[200px]">
+                        <img src="./assets/fire-service.png" class="w-[60px] h-[60px]" alt="Shoes" />
+                        <button class="btn btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                stroke="currentColor" class="size-[1.2em]">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
+                        </button>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-2xl">
+                            Fire Service Number
+                        </h2>
+                        <p>Fire Service</p>
+                        <h2 class="card-title font-bold text-3xl">
+                            999
+                        </h2>
+                        <button class="btn btn-soft w-[53px] rounded-2xl">Fire</button>
+                        <div class="flex gap-2">
+                            <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card bg-base-100 w-96 shadow-sm mb-5">
-                <figure class="flex gap-[200px]">
-                    <img src="./assets/ambulance.png" class="w-[60px] h-[60px]" alt="Shoes" />
-                    <button class="btn btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                            stroke="currentColor" class="size-[1.2em]">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
-                    </button>
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title text-2xl">
-                        Ambulance Service
-                    </h2>
-                    <p>Ambulance</p>
-                    <h2 class="card-title font-bold text-3xl">
-                        1994-999999
-                    </h2>
-                    <button class="btn btn-soft w-[53px] rounded-2xl">Health</button>
-                    <div class="flex gap-2">
-                        <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i class="fa-solid fa-copy"></i>Copy</button>
-                        <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i class="fa-solid fa-phone"></i>Call</button>
+                <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
+                    <figure class="flex gap-32 md:gap-[200px]">
+                        <img src="./assets/ambulance.png" class="w-[60px] h-[60px]" alt="Shoes" />
+                        <button class="btn btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                stroke="currentColor" class="size-[1.2em]">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
+                        </button>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-2xl">
+                            Ambulance Service
+                        </h2>
+                        <p>Ambulance</p>
+                        <h2 class="card-title font-bold text-3xl">
+                            1994-999999
+                        </h2>
+                        <button class="btn btn-soft w-[53px] rounded-2xl">Health</button>
+                        <div class="flex gap-2">
+                            <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card bg-base-100 w-96 shadow-sm mb-5">
-                <figure class="flex gap-[200px]">
-                    <img src="./assets/emergency.png" class="w-[60px] h-[60px]" alt="Shoes" />
-                    <button class="btn btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                            stroke="currentColor" class="size-[1.2em]">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
-                    </button>
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title text-2xl">
-                        Women & Child Helpline
-                    </h2>
-                    <p>Women & Child Helpline</p>
-                    <h2 class="card-title font-bold text-3xl">
-                        109
-                    </h2>
-                    <button class="btn btn-soft w-[53px] rounded-2xl">Help</button>
-                    <div class="flex gap-2">
-                        <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i class="fa-solid fa-copy"></i>Copy</button>
-                        <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i class="fa-solid fa-phone"></i>Call</button>
+                <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
+                    <figure class="flex gap-32 md:gap-[200px]">
+                        <img src="./assets/emergency.png" class="w-[60px] h-[60px]" alt="Shoes" />
+                        <button class="btn btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                stroke="currentColor" class="size-[1.2em]">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
+                        </button>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-2xl">
+                            Women & Child Helpline
+                        </h2>
+                        <p>Women & Child Helpline</p>
+                        <h2 class="card-title font-bold text-3xl">
+                            109
+                        </h2>
+                        <button class="btn btn-soft w-[53px] rounded-2xl">Help</button>
+                        <div class="flex gap-2">
+                            <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card bg-base-100 w-96 shadow-sm mb-5">
-                <figure class="flex gap-[200px]">
-                    <img src="./assets/emergency.png" class="w-[60px] h-[60px]" alt="Shoes" />
-                    <button class="btn btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                            stroke="currentColor" class="size-[1.2em]">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
-                    </button>
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title text-2xl">
-                        Anti-Corruption Helpline
-                    </h2>
-                    <p>Anti-Corruption</p>
-                    <h2 class="card-title font-bold text-3xl">
-                        106
-                    </h2>
-                    <button class="btn btn-soft w-[53px] rounded-2xl">Govt.</button>
-                    <div class="flex gap-2">
-                        <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i class="fa-solid fa-copy"></i>Copy</button>
-                        <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i class="fa-solid fa-phone"></i>Call</button>
+                <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
+                    <figure class="flex gap-32 md:gap-[200px]">
+                        <img src="./assets/emergency.png" class="w-[60px] h-[60px]" alt="Shoes" />
+                        <button class="btn btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                stroke="currentColor" class="size-[1.2em]">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
+                        </button>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-2xl">
+                            Anti-Corruption Helpline
+                        </h2>
+                        <p>Anti-Corruption</p>
+                        <h2 class="card-title font-bold text-3xl">
+                            106
+                        </h2>
+                        <button class="btn btn-soft w-[53px] rounded-2xl">Govt.</button>
+                        <div class="flex gap-2">
+                            <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card bg-base-100 w-96 shadow-sm mb-5">
-                <figure class="flex gap-[200px]">
-                    <img src="./assets/emergency.png" alt="Shoes" />
-                    <button class="btn btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                            stroke="currentColor" class="size-[1.2em]">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
-                    </button>
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title text-2xl">
-                        Electricity Helpline
-                    </h2>
-                    <p>Electricity Outage</p>
-                    <h2 class="card-title font-bold text-3xl">
-                        16216
-                    </h2>
-                    <button class="btn btn-soft w-[53px] rounded-2xl">Electricity</button>
-                    <div class="flex gap-2">
-                        <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i class="fa-solid fa-copy"></i>Copy</button>
-                        <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i class="fa-solid fa-phone"></i>Call</button>
+                <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
+                    <figure class="flex gap-32 md:gap-[200px]">
+                        <img src="./assets/emergency.png" alt="Shoes" />
+                        <button class="btn btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                stroke="currentColor" class="size-[1.2em]">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
+                        </button>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-2xl">
+                            Electricity Helpline
+                        </h2>
+                        <p>Electricity Outage</p>
+                        <h2 class="card-title font-bold text-3xl">
+                            16216
+                        </h2>
+                        <button class="btn btn-soft w-[53px] rounded-2xl">Electricity</button>
+                        <div class="flex gap-2">
+                            <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card bg-base-100 w-96 shadow-sm mb-5">
-                <figure class="flex gap-[200px]">
-                    <img src="./assets/brac.png" class="w-[60px] h-[60px]" alt="Shoes" />
-                    <button class="btn btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                            stroke="currentColor" class="size-[1.2em]">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
-                    </button>
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title text-2xl">
-                        Brac Helpline
-                    </h2>
-                    <p>Brac</p>
-                    <h2 class="card-title font-bold text-3xl">
-                        16445
-                    </h2>
-                    <button class="btn btn-soft w-[53px] rounded-2xl">NGO</button>
-                    <div class="flex gap-2">
-                        <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i class="fa-solid fa-copy"></i>Copy</button>
-                        <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i class="fa-solid fa-phone"></i>Call</button>
+                <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
+                    <figure class="flex gap-32 md:gap-[200px]">
+                        <img src="./assets/brac.png" class="w-[60px] h-[60px]" alt="Shoes" />
+                        <button class="btn btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                stroke="currentColor" class="size-[1.2em]">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
+                        </button>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-2xl">
+                            Brac Helpline
+                        </h2>
+                        <p>Brac</p>
+                        <h2 class="card-title font-bold text-3xl">
+                            16445
+                        </h2>
+                        <button class="btn btn-soft w-[53px] rounded-2xl">NGO</button>
+                        <div class="flex gap-2">
+                            <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card bg-base-100 w-96 shadow-sm mb-5">
-                <figure class="flex gap-[200px]">
-                    <img src="./assets/Bangladesh-Railway.png" class="w-[60px] h-[60px]" alt="Shoes" />
-                    <button class="btn btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                            stroke="currentColor" class="size-[1.2em]">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
-                    </button>
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title text-2xl">
-                        Bangladesh Railway Helpline 
-                    </h2>
-                    <p>Bangladesh Railway</p>
-                    <h2 class="card-title font-bold text-3xl">
-                        163
-                    </h2>
-                    <button class="btn btn-soft w-[53px] rounded-2xl">Travel</button>
-                    <div class="flex gap-2">
-                        <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i class="fa-solid fa-copy"></i>Copy</button>
-                        <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i class="fa-solid fa-phone"></i>Call</button>
+                <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
+                    <figure class="flex gap-32 md:gap-[200px]">
+                        <img src="./assets/Bangladesh-Railway.png" class="w-[60px] h-[60px]" alt="Shoes" />
+                        <button class="btn btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                stroke="currentColor" class="size-[1.2em]">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
+                        </button>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-2xl">
+                            Bangladesh Railway Helpline
+                        </h2>
+                        <p>Bangladesh Railway</p>
+                        <h2 class="card-title font-bold text-3xl">
+                            163
+                        </h2>
+                        <button class="btn btn-soft w-[53px] rounded-2xl">Travel</button>
+                        <div class="flex gap-2">
+                            <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
 
         <!-- this is for the call history section -->
-        <div></div>
+        <div>
+            <div class="flex justify-between items-center w-64 md:w-[400px] bg-white p-4 rounded-lg">
+                <h2><i class="fa-solid fa-clock mr-3"></i>Call History</h2>
+                <button class="btn btn-success rounded-3xl text-white bg-[#00a63e]">Clear</button>
+            </div>
+        </div>
     </div>
 </body>
 
