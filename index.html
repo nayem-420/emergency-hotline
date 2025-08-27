@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-[#f5fff6] ml-0">
+<body class="bg-[#f5fff6]">
     <!-- navbar section -->
     <nav class="flex flex-col md:flex-row justify-between items-center mx-auto md:mx-10 mt-3">
         <div class="flex justify-center items-center">
@@ -23,9 +23,9 @@
             <h1 class="font-bold text-2xl text-[#006747] ml-2">Emergency <br> Service</h1>
         </div>
         <div class="flex flex-col md:flex-row gap-3">
-            <button class="btn btn-soft rounded-full bg-[#41ff6b1a] font-extrabold text-xl">0 <i
+            <button class="btn btn-soft rounded-full bg-[#41ff6b1a] font-extrabold text-xl"><span id="heart-icon">0</span> <i
                     class="fa-solid fa-heart text-red-700"></i></button>
-            <button class="btn btn-soft rounded-full bg-[#41ff6b1a] font-extrabold text-xl">100 <i
+            <button class="btn btn-soft rounded-full bg-[#41ff6b1a] font-extrabold text-xl"><span id="coin-count">100</span> <i
                     class="fa-brands fa-bitcoin"></i></button>
             <button class="btn btn-success rounded-full font-bold text-xl text-white bg-[#00a63e]">0 Copy</button>
         </div>
@@ -48,7 +48,7 @@
                 <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
                     <figure class="flex gap-32 md:gap-[200px]">
                         <img src="./assets/emergency.png" class="w-[60px] h-[60px]" alt="Shoes" />
-                        <button class="btn btn-circle">
+                        <button class="btn btn-circle heart">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
                                 stroke="currentColor" class="size-[1.2em]">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -68,7 +68,7 @@
                         <div class="flex gap-2">
                             <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
                                     class="fa-solid fa-copy"></i>Copy</button>
-                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
+                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5 call-btn"><i
                                     class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                 <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
                     <figure class="flex gap-28 md:gap-[200px]">
                         <img src="./assets/police.png" class="w-[60px] h-[60px]" alt="Shoes" />
-                        <button class="btn btn-circle">
+                        <button class="btn btn-circle heart">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
                                 stroke="currentColor" class="size-[1.2em]">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -96,7 +96,7 @@
                         <div class="flex gap-2">
                             <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
                                     class="fa-solid fa-copy"></i>Copy</button>
-                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
+                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5 call-btn"><i
                                     class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
                 <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
                     <figure class="flex gap-32 md:gap-[200px]">
                         <img src="./assets/fire-service.png" class="w-[60px] h-[60px]" alt="Shoes" />
-                        <button class="btn btn-circle">
+                        <button class="btn btn-circle heart">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
                                 stroke="currentColor" class="size-[1.2em]">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -124,7 +124,7 @@
                         <div class="flex gap-2">
                             <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
                                     class="fa-solid fa-copy"></i>Copy</button>
-                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
+                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5 call-btn"><i
                                     class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                 <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
                     <figure class="flex gap-32 md:gap-[200px]">
                         <img src="./assets/ambulance.png" class="w-[60px] h-[60px]" alt="Shoes" />
-                        <button class="btn btn-circle">
+                        <button class="btn btn-circle heart">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
                                 stroke="currentColor" class="size-[1.2em]">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -152,7 +152,7 @@
                         <div class="flex gap-2">
                             <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
                                     class="fa-solid fa-copy"></i>Copy</button>
-                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
+                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5 call-btn"><i
                                     class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                 <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
                     <figure class="flex gap-32 md:gap-[200px]">
                         <img src="./assets/emergency.png" class="w-[60px] h-[60px]" alt="Shoes" />
-                        <button class="btn btn-circle">
+                        <button class="btn btn-circle heart">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
                                 stroke="currentColor" class="size-[1.2em]">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -180,7 +180,7 @@
                         <div class="flex gap-2">
                             <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
                                     class="fa-solid fa-copy"></i>Copy</button>
-                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
+                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5 call-btn"><i
                                     class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
@@ -188,7 +188,7 @@
                 <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
                     <figure class="flex gap-32 md:gap-[200px]">
                         <img src="./assets/emergency.png" class="w-[60px] h-[60px]" alt="Shoes" />
-                        <button class="btn btn-circle">
+                        <button class="btn btn-circle heart">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
                                 stroke="currentColor" class="size-[1.2em]">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -206,7 +206,7 @@
                         </h2>
                         <button class="btn btn-soft w-[53px] rounded-2xl">Govt.</button>
                         <div class="flex gap-2">
-                            <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
+                            <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5 call-btn"><i
                                     class="fa-solid fa-copy"></i>Copy</button>
                             <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
                                     class="fa-solid fa-phone"></i>Call</button>
@@ -216,7 +216,7 @@
                 <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
                     <figure class="flex gap-32 md:gap-[200px]">
                         <img src="./assets/emergency.png" alt="Shoes" />
-                        <button class="btn btn-circle">
+                        <button class="btn btn-circle heart">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
                                 stroke="currentColor" class="size-[1.2em]">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -236,7 +236,7 @@
                         <div class="flex gap-2">
                             <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
                                     class="fa-solid fa-copy"></i>Copy</button>
-                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
+                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5 call-btn"><i
                                     class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
@@ -244,7 +244,7 @@
                 <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
                     <figure class="flex gap-32 md:gap-[200px]">
                         <img src="./assets/brac.png" class="w-[60px] h-[60px]" alt="Shoes" />
-                        <button class="btn btn-circle">
+                        <button class="btn btn-circle heart">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
                                 stroke="currentColor" class="size-[1.2em]">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -264,7 +264,7 @@
                         <div class="flex gap-2">
                             <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
                                     class="fa-solid fa-copy"></i>Copy</button>
-                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
+                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5 call-btn"><i
                                     class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
@@ -272,7 +272,7 @@
                 <div class="card bg-base-100 w-64 md:w-96 shadow-sm mb-5">
                     <figure class="flex gap-32 md:gap-[200px]">
                         <img src="./assets/Bangladesh-Railway.png" class="w-[60px] h-[60px]" alt="Shoes" />
-                        <button class="btn btn-circle">
+                        <button class="btn btn-circle heart">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
                                 stroke="currentColor" class="size-[1.2em]">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -292,7 +292,7 @@
                         <div class="flex gap-2">
                             <button class="btn btn-outline w-1/2 text-[#5c5c5c] rounded-xl p-5"><i
                                     class="fa-solid fa-copy"></i>Copy</button>
-                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5"><i
+                            <button class="btn btn-success w-1/2 rounded-xl text-white bg-[#00a63e] p-5 call-btn"><i
                                     class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
@@ -310,6 +310,9 @@
             </div>
         </div>
     </div>
+
+    <!-- javascript file -->
+    <script src="./script.js"></script>
 </body>
 
 </html>
