@@ -61,12 +61,12 @@ document.querySelector(".clear").addEventListener("click", function () {
 // copy button
 document.querySelectorAll(".copy-btn").forEach(button => {
   button.addEventListener("click", function () {
-    let card = this.closest(".card-body");
+    let card = button.parentNode.parentNode;
+
     let serviceNumber = card.querySelector(".service-number").innerText.trim();
 
-    navigator.clipboard.writeText(serviceNumber).then(() => {
-      alert(`✅ Number ${serviceNumber} copied to clipboard!`);
-    });
+    navigator.clipboard.writeText(serviceNumber);
+    alert("✅ Number copied!");
 
     let copySpan = document.getElementById("copy");
     let count = parseInt(copySpan.innerText);
