@@ -1,3 +1,4 @@
+// create the heart buttons count
 document.querySelectorAll(".heart").forEach(button => {
     button.addEventListener("click", function(e) {
         e.preventDefault();
@@ -11,6 +12,7 @@ document.querySelectorAll(".heart").forEach(button => {
     });
 });
 
+// create the call buttons
 const callBtns = document.getElementsByClassName("call-btn");
 
 for (let callButton of callBtns) {
@@ -25,7 +27,7 @@ for (let callButton of callBtns) {
         let coinSpan = document.getElementById("coin-count");
         let coins = parseInt(coinSpan.innerText);
         if (coins < 20) {
-            alert("❌ You don’t have enough coins! Minimum 20 coins required.");
+            alert("❌ You don’t have enough coins! Minimum 20 coins required.❗❗❗");
             return;
         }
 
@@ -38,19 +40,25 @@ for (let callButton of callBtns) {
 
         const newCart = document.createElement("div");
         newCart.className = "bg-gray-200 rounded-xl flex justify-between mb-3 p-4";
-        newCart.innerHTML = `<h2 class="font-bold">${serviceName} - ${serviceNumber} (${time})</h2>`;
+        newCart.innerHTML = `
+        <div class="flex justify-between w-full font-bold">
+            <span>${serviceName} - ${serviceNumber}</span>
+            <span>${time}</span>
+        </div>
+        `;
 
         cartContainer.appendChild(newCart);
-
-        
     });
 }
 
+// clear button
 document.querySelector(".btn-success.rounded-3xl").addEventListener("click", function () {
     const cartContainer = document.getElementById("cart-container");
     cartContainer.innerHTML = "";
 });
 
+
+// copy button
 document.querySelectorAll(".copy-btn").forEach(button => {
   button.addEventListener("click", function () {
     let card = this.closest(".card-body");
