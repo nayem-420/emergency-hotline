@@ -1,16 +1,17 @@
 // create the heart buttons count
-document.querySelectorAll(".heart").forEach(button => {
-    button.addEventListener("click", function(e) {
+const heartBtns = document.getElementsByClassName("heart");
+
+for (let heartBtn of heartBtns) {
+    heartBtn.addEventListener("click", function (e) {
         e.preventDefault();
 
         const heartIcon = document.getElementById("heart-icon");
-        let heartButton = parseInt(heartIcon.innerText);
+        let heartCount = parseInt(heartIcon.innerText);
 
-        const showHeartButton = heartButton + 1;
-
-        heartIcon.innerText = showHeartButton;
+        heartCount += 1;
+        heartIcon.innerText = heartCount;
     });
-});
+}
 
 // create the call buttons
 const callBtns = document.getElementsByClassName("call-btn");
@@ -59,17 +60,21 @@ document.querySelector(".clear").addEventListener("click", function () {
 
 
 // copy button
-document.querySelectorAll(".copy-btn").forEach(button => {
-  button.addEventListener("click", function () {
-    let card = button.parentNode.parentNode;
+const copyBtns = document.getElementsByClassName("copy-btn");
 
-    let serviceNumber = card.querySelector(".service-number").innerText.trim();
+for (let copyBtn of copyBtns) {
+    copyBtn.addEventListener("click", function (e) {
+        e.preventDefault();
 
-    navigator.clipboard.writeText(serviceNumber);
-    alert("✅ Number copied!");
+        let card = copyBtn.parentNode.parentNode; 
 
-    let copySpan = document.getElementById("copy");
-    let count = parseInt(copySpan.innerText);
-    copySpan.innerText = count + 1;
-  });
-});
+        let serviceNumber = card.querySelector(".service-number").innerText.trim();
+
+        navigator.clipboard.writeText(serviceNumber);
+        alert(`✅ Number ${serviceNumber} copied!`);
+
+        let copySpan = document.getElementById("copy");
+        let count = parseInt(copySpan.innerText);
+        copySpan.innerText = count + 1;
+    });
+}
