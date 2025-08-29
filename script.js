@@ -52,7 +52,7 @@ for (let callButton of callBtns) {
 }
 
 // clear button
-document.querySelector(".btn-success.rounded-3xl").addEventListener("click", function () {
+document.querySelector(".clear").addEventListener("click", function () {
     const cartContainer = document.getElementById("cart-container");
     cartContainer.innerHTML = "";
 });
